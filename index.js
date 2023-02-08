@@ -39,14 +39,14 @@ module.exports = postcss.plugin('postcss-px-to-viewport', function (options) {
         if (Object.prototype.toString.call(opts.include) === '[object RegExp]') {
           if (!isInclude(opts.include, file)) return;
         } else if (Object.prototype.toString.call(opts.include) === '[object Array]') {
-          let hasFlag = false
+          let includedFlag = false
           for (let i = 0; i < opts.include.length; i++) {
             if (isInclude(opts.include[i], file)) {
-              hasFlag = true
+              includedFlag = true
               break
             }
           }
-          if (!hasFlag) return
+          if (!includedFlag) return
         } else {
           throw new Error('options.include should be RegExp or Array.');
         }
