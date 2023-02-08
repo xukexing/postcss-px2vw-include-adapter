@@ -1,11 +1,13 @@
 {
   "name": "postcss-px2vw-include-adapter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).（Based on postcss-px-to-viewport, adapt the include option configuration）",
-  "main": "lib/bundle.js",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xukexing/postcss-px2vw-include-adapter.git"
+  },
+  "homepage": "https://github.com/xukexing/postcss-px2vw-include-adapter",
   "scripts": {
     "build": "rollup -c"
   },
